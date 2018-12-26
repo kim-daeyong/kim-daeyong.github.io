@@ -25,11 +25,11 @@ description: Awesome!
 navbar-links:
   About Me: "aboutme"
   Category:
-    - Java: ""
-    - Sql: ""
-    - Html/css: ""
-    - algorithm: ""
-    - Spring: ""
+    - Java: "https://kim-daeyong.github.io/tags/#Java"
+    - Sql: "https://kim-daeyong.github.io/tags/#Sql"
+    - Html/css: "https://kim-daeyong.github.io/tags/#Html"
+    - Algorithm: "https://kim-daeyong.github.io/tags/#Algorithm"
+    - Spring: "https://kim-daeyong.github.io/tags/#Spring"
   # Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
