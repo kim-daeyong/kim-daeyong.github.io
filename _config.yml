@@ -25,9 +25,9 @@ description: Awesome!
 navbar-links:
   About Me: "aboutme"
   Category:
-    - Java: "https://kim-daeyong.github.io/tags/#Java"
-    - Sql: "https://kim-daeyong.github.io/tags/#Sql"
-    - Html/css: "https://kim-daeyong.github.io/tags/#Html"
+    - Java: "https://kim-daeyong.github.io/tags/#JAVA"
+    - Sql: "https://kim-daeyong.github.io/tags/#SQL"
+    - Html/css: "https://kim-daeyong.github.io/tags/#HTML/CSS"
     - Algorithm: "https://kim-daeyong.github.io/tags/#Algorithm"
     - Spring: "https://kim-daeyong.github.io/tags/#Spring"
   # Author's home: "http://deanattali.com"
