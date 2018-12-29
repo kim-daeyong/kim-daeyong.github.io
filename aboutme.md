@@ -1,13 +1,11 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: 개발자
 ---
 
-Kim- dae yong
+Kim dae yong
 
-
+타닥타닥타닥
 
 ### my history
-
-Learning
