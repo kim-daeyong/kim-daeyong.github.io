@@ -23,6 +23,7 @@ description: Awesome!
 
 # List of links in the navigation bar
 navbar-links:
+  <a href="/search/"><img src="/img/search.png"/></a>
   About Me: "aboutme"
   Category:
     - Java: "https://kim-daeyong.github.io/tags/#JAVA"
