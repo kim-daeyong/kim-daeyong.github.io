@@ -26,10 +26,12 @@ navbar-links:
   About Me: "aboutme"
   Category:
     - Java: "https://kim-daeyong.github.io/tags/#JAVA"
-    - Sql: "https://kim-daeyong.github.io/tags/#SQL"
     - Html/css: "https://kim-daeyong.github.io/tags/#HTML/CSS"
-    - Algorithm: "https://kim-daeyong.github.io/tags/#Algorithm"
+    - JSP/Servlet : "https://kim-daeyong.github.io/tags/#JSP/SERVLET"
+    - Sql: "https://kim-daeyong.github.io/tags/#SQL"
     - Spring: "https://kim-daeyong.github.io/tags/#Spring"
+    - Git:  "https://kim-daeyong.github.io/tags/#Git"
+    - Algorithm: "https://kim-daeyong.github.io/tags/#Algorithm"
   # Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -46,7 +48,7 @@ navbar-links:
 
 navbar-col: "#CCEEFF"
 navbar-text-col: "#404040"
-navbar-children-col: "#CCEEFF"
+navbar-children-col: "#F5F5F5"
 page-col: "#FFFFFF"
 link-col: "#008AFF"
 hover-col: "#0085A1"
