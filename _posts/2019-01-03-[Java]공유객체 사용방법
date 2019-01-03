@@ -1,0 +1,99 @@
+---
+layout: post
+title: 공유객체 사용법 
+subtitle: 
+gh-repo: 
+gh-badge: [star, fork, follow]
+tags: [JAVA]
+---
+
+문제없이 공유객체를 사용하는 방법.
+
+1. 필드 사용 시 synchronized를 붙인다.(동시 호출되지않고 한 쓰레드가 끝날때까지 다른 sync는 실행되지 않는다.)
+
+2. 필드자체가 동시에 사용될 수 없도록 만든다.(쓰레드 safe 하게 만든다.)
+
+*쓰레드를 동시에 실행하면 누가 먼저 실행될지 알 수 없기 때문에 wait, notify같은걸 사용한다.
+ monitoring lock - 참조바람
+
+
+
+예>
+
+Runable 인터페이스를 상속받아 쓰레드 구성 
+
+public class BoxThread implements Runnable{
+    private Box box;
+    private int num;
+
+    public BoxThread(Box box, int num){
+        this.box = box;
+        this.num = num;
+    }
+
+    @Override
+    public void run() {
+        if(num == 1)
+            box.methodA();
+        else if(num == 2)
+            box.methodB();
+        else if(num == 3)
+            box.methodC();
+    }
+}
+
+
+Synchronized block
+
+
+public class Box {
+    private List<String> list;
+
+    public Box(){
+        list = new ArrayList<>();
+    }
+
+    public void methodA(){
+        synchronized (list) {
+            for (int i = 1; i < 1000; i++) {
+                list.add(i + "");
+            }
+        }
+    } // methodA
+
+    public void methodB(){
+        synchronized (list) {
+            for (int i = 1; i < 1000; i++) {
+                try {
+                    list.remove(0);
+                } catch (Exception ignore) {
+                }
+            }
+        }
+    } // methodA
+
+    public void methodC(){
+        synchronized (list) {
+            for (int x = 0; x < 1000; x++) {
+                int size = list.size();
+                for (int i = 0; i < size; i++) {
+                    System.out.println(list.get(i));
+                }
+            }
+
+        }
+    } // methodA
+}
+
+public class BoxMain {
+    public static void main(String[] args){
+        Box box = new Box();
+        Thread t1 = new Thread(new BoxThread(box, 1));
+        Thread t2 = new Thread(new BoxThread(box, 2));
+        Thread t3 = new Thread(new BoxThread(box, 3));
+        t1.start();
+        t2.start();
+        t3.start();
+        System.out.println("end!");
+    }
+}
