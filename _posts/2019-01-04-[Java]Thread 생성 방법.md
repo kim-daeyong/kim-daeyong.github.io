@@ -12,7 +12,7 @@ tags: [JAVA]
 Thread 클래스를 상속하거나 Runnable(interface)를 쓰는 방법이다.
 
 # Thread를 상속하는 방법  
-##* Thread 클래스 상속  
+## * Thread 클래스 상속  
 
 ####Thread Class
 #####start()  
@@ -23,7 +23,7 @@ Thread 클래스를 상속하거나 Runnable(interface)를 쓰는 방법이다.
   
   
   
-##* Runnable인터페이스를 사용하는 방법.  
+## * Runnable인터페이스를 사용하는 방법.  
   
 
 ####runnable(interface)  
