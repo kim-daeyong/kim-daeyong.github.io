@@ -18,9 +18,13 @@ Thread 클래스 상속
 THread
 
 start()
+
 run()
 
 메소드를 가지고 있다.
+
+
+
 
 2. Runnable인터페이스를 사용하는 방법.
 
@@ -39,6 +43,7 @@ start()
 Thread(runnable) - runnable의 자식을 갖는다(인터페이스는 인스턴스를 가질수 없기에)
 
 *Thread t = new Thread(new MyThread)
+
 
 
 (implements)
