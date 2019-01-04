@@ -28,7 +28,7 @@ run()
 
 2. Runnable인터페이스를 사용하는 방법.
 
-<interface>
+(interface)
 runnable
 
 run()
