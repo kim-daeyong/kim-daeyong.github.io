@@ -23,7 +23,7 @@ run()
   
   
   
-##Runnable인터페이스를 사용하는 방법.  
+## Runnable인터페이스를 사용하는 방법.  
   
 
 runnable(interface)  
@@ -44,7 +44,7 @@ Thread(runnable) - runnable의 자식을 갖는다   (인터페이스는 인스�
   
 (implements)  
   
-MyThread  
+MyThread  클래스
 run() - 코드 구현  
   
   
