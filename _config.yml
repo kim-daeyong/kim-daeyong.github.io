@@ -17,7 +17,7 @@ baseurl: ""
 title: KDY's
 
 # Short description of your site
-description: Fantastic!
+description: WOW!
 
 # --- Navigation bar options --- #
 
@@ -30,6 +30,7 @@ navbar-links:
     - JSP/Servlet : "https://kim-daeyong.github.io/tags/#JSP/SERVLET"
     - Sql: "https://kim-daeyong.github.io/tags/#SQL"
     - Spring: "https://kim-daeyong.github.io/tags/#Spring"
+    - SpringBoot: "https://kim-daeyong.github.io/tags/#SpringBoot"
     - Git:  "https://kim-daeyong.github.io/tags/#Git"
     - Algorithm: "https://kim-daeyong.github.io/tags/#Algorithm"
     - Today's_Think : "https://kim-daeyong.github.io/tags/#TT"
