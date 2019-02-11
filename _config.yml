@@ -130,8 +130,8 @@ url-pretty: "Dev."  # eg. "deanattali.com/beautiful-jekyll"
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-# disqus_url: "kim-daeyong"
-  disqus_id: kim-daeyong
+ disqus_url: https://kim-daeyong.github.io
+ disqus_id: kim-daeyong
 
 # To use Facebook Comments, fill in a Facebook App ID
 # fb_comment_id: ""
