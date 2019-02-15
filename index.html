@@ -63,6 +63,7 @@ use-site-title: true
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
   </li>
   {% endif %}
+  "{"% include pagination.html %"}"
   {% if paginator.next_page %}
   <li class="next">
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
@@ -70,5 +71,3 @@ use-site-title: true
   {% endif %}
 </ul>
 {% endif %}
-
-"{"% include pagination.html %"}"
