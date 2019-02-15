@@ -34,7 +34,8 @@ navbar-links:
     - Git:  "https://kim-daeyong.github.io/tags/#Git"
     - Algorithm: "https://kim-daeyong.github.io/tags/#Algorithm"
     - Today's_Think : "https://kim-daeyong.github.io/tags/#TT"
-    - exam : "https://kim-daeyong.github.io/categories/Other"
+    - exam : "https://kim-daeyong.github.io/category/Other"
+    - exam2:  "https://kim-daeyong.github.io/tags/Git"
 
   # Author's home: "http://deanattali.com"
 
