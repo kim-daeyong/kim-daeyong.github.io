@@ -36,16 +36,16 @@ navbar-links:
     - Today's_Think : "https://kim-daeyong.github.io/tags/#TT"
     - exam : "https://kim-daeyong.github.io/category/Other"
     - exam2:  "https://kim-daeyong.github.io/tags/Git"
-  Tag : 
-    - Java: "https://kim-daeyong.github.io/tags/#JAVA"
-    - Html/css: "https://kim-daeyong.github.io/tags/#HTML/CSS"
-    - JSP/Servlet : "https://kim-daeyong.github.io/tags/#JSP/SERVLET"
-    - Sql: "https://kim-daeyong.github.io/tags/#SQL"
-    - Spring: "https://kim-daeyong.github.io/tags/#Spring"
-    - SpringBoot: "https://kim-daeyong.github.io/tags/#SpringBoot"
-    - Git:  "https://kim-daeyong.github.io/tags/#Git"
-    - Algorithm: "https://kim-daeyong.github.io/tags/#Algorithm"
-    - Today's_Think : "https://kim-daeyong.github.io/tags/#TT"
+  # Tag : 
+  #   - Java: "https://kim-daeyong.github.io/tags/#JAVA"
+  #   - Html/css: "https://kim-daeyong.github.io/tags/#HTML/CSS"
+  #   - JSP/Servlet : "https://kim-daeyong.github.io/tags/#JSP/SERVLET"
+  #   - Sql: "https://kim-daeyong.github.io/tags/#SQL"
+  #   - Spring: "https://kim-daeyong.github.io/tags/#Spring"
+  #   - SpringBoot: "https://kim-daeyong.github.io/tags/#SpringBoot"
+  #   - Git:  "https://kim-daeyong.github.io/tags/#Git"
+  #   - Algorithm: "https://kim-daeyong.github.io/tags/#Algorithm"
+  #   - Today's_Think : "https://kim-daeyong.github.io/tags/#TT"
 
   # Author's home: "http://deanattali.com"
 
