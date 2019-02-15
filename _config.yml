@@ -35,7 +35,8 @@ navbar-links:
     - Algorithm: "https://kim-daeyong.github.io/tags/#Algorithm"
     - Today's_Think : "https://kim-daeyong.github.io/tags/#TT"
     - exam : "https://kim-daeyong.github.io/category/Other"
-    - tags : "https://kim-daeyong.github.io/tags/""
+    - tags : "https://kim-daeyong.github.io/tags/"
+    
   # Tag : 
   #   - Java: "https://kim-daeyong.github.io/tags/#JAVA"
   #   - Html/css: "https://kim-daeyong.github.io/tags/#HTML/CSS"
