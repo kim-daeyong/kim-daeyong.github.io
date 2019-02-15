@@ -34,7 +34,7 @@ navbar-links:
     - Git:  "https://kim-daeyong.github.io/tags/#Git"
     - Algorithm: "https://kim-daeyong.github.io/tags/#Algorithm"
     - Today's_Think : "https://kim-daeyong.github.io/tags/#TT"
-   GOUP : <a href="#top"></a>
+    
   # Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
