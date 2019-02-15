@@ -6,4 +6,7 @@ layout: base
 
 <div role="main" class="container">
   {{ content }}
+  {% for post in paginator.posts %}
+  {% include paginationcate.html %}   
+  {% endfor %}
 </div>
