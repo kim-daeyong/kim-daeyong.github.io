@@ -171,6 +171,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+paginate_path: "/posts/page/:num" # 다음 페이지에 해당하는 URL
 
 kramdown:
   input: GFM
