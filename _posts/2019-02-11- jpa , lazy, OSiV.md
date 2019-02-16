@@ -6,6 +6,7 @@ gh-repo:
 gh-badge: [star, fork, follow]
 tags: [SpringBoot]
 comments : true
+categories : [Spring]
 ---
 
 Spring Web MVC

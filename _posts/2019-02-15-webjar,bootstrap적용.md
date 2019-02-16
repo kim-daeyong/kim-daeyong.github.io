@@ -6,6 +6,7 @@ gh-repo:
 gh-badge: [star, fork, follow]
 tags: [Spring]
 comments : true
+categories : [Spring]
 ---
 
 jquery, bootstrap  

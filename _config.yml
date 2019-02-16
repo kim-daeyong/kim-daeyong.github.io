@@ -25,17 +25,15 @@ description: WOW!
 navbar-links:
   About Me: "aboutme"
   Category:
-    - Java: "https://kim-daeyong.github.io/tags/#JAVA"
-    - Html/css: "https://kim-daeyong.github.io/tags/#HTML/CSS"
-    - JSP/Servlet : "https://kim-daeyong.github.io/tags/#JSP/SERVLET"
-    - Sql: "https://kim-daeyong.github.io/tags/#SQL"
-    - Spring: "https://kim-daeyong.github.io/tags/#Spring"
-    - SpringBoot: "https://kim-daeyong.github.io/tags/#SpringBoot"
-    - Git:  "https://kim-daeyong.github.io/tags/#Git"
-    - Algorithm: "https://kim-daeyong.github.io/tags/#Algorithm"
-    - Today's_Think : "https://kim-daeyong.github.io/tags/#TT"
-    - exam : "https://kim-daeyong.github.io/category/Other"
-    - tags : "https://kim-daeyong.github.io/tags/"
+    - Java: "https://kim-daeyong.github.io/category/Java"
+    - Front,JS: "https://kim-daeyong.github.io/category/Front"
+    - JSP/Web : "https://kim-daeyong.github.io/category/JSP"
+    - DB: "https://kim-daeyong.github.io/category/DB"
+    - Spring: "https://kim-daeyong.github.io/category/Spring"
+    - Other: "https://kim-daeyong.github.io/category/Other"
+    - Algorithm: "https://kim-daeyong.github.io/category/Algorithm"
+    - Today's_Think : "https://kim-daeyong.github.io/category/TT"
+    - Tags : "https://kim-daeyong.github.io/tags/"
     
   # Tag : 
   #   - Java: "https://kim-daeyong.github.io/tags/#JAVA"

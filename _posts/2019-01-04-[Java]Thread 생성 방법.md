@@ -5,6 +5,7 @@ subtitle:
 gh-repo:
 gh-badge: [star,fork,follow]
 tags: [JAVA]
+categories : [Java]
 ---
 
 쓰레드를 생성하는 방법은 크게 2가지가 있다.
