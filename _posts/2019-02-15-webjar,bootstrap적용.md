@@ -14,7 +14,7 @@ jquery, bootstrap
 프론트 라이브러리도 maven, gradle을 추가할 수 있다.  
 
 ~~~
-		<!-- webjar -->
+		<!-- webjar 프론트단을 불러오는 라이브러리-->
 		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>jquery</artifactId>
