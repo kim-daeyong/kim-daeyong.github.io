@@ -8,9 +8,7 @@ layout: default
       {% assign category = page.category | default: page.title %}
       {% for post in site.categories[category] %}
 
-      <div>
-      {% for post in paginator.posts %}
-      
+
         <article class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl }}">
           <h2 class="post-title">{{ post.title }}</h2>
@@ -57,9 +55,6 @@ layout: default
           {% endif %}
       
          </article>
-
-         {% endfor %}
-        </div>
 
       {% endfor %}
 
