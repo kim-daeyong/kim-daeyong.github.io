@@ -17,7 +17,7 @@ categories : [Spring]
 3. JPA는 JPQL을 분석하여 SQL을 생성한 후 DB에서 조회
 
 
-* 수정예정 
+* fetch join - 일반적인 조인은 연관관계는 고려하지않으나 fetch는 연관된 엔티티도 함께 조회한다.
 
 JPQL fetch join 사용법
 1) 공식문서 명령어 , [LEFT [OUTER] INNER] JOIN FETCH 조인경로
