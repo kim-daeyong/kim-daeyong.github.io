@@ -84,5 +84,3 @@ System.out.println(parents);
 페치 조인 대상에는 별칭을 줄 수 없다.
 둘 이상의 컬렉션을 페치 할 수 없다.
 컬렉션을 페치 조인하면 페이징 API를 사용 할 수 없다.
-
-참고 : [choiwono](https://choiwono.github.io/jpql/)
