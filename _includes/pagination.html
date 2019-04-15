@@ -17,11 +17,11 @@
         
         {% for p in (first..last) %}
             {% if p == paginator.page %}
-                <li class="page-number active">{{ p }}</li>
+                <li class="page-item active">{{ p }}</li>
                 {% elsif p == 1 %}
-                <li class="page-number"><a href="{{ site.baseurl }}/">{{ p }}</a></li>
+                <li class="page-item"><a href="{{ site.baseurl }}/">{{ p }}</a></li>
             {% else %}
-                <li class="page-number"><a
+                <li class="page-item"><a
                             href="{{ site.baseurl }}{{ site.paginate_path | replace: ':num', p }}">{{ p }}</a></li>
             {% endif %}
         {% endfor %}
