@@ -7,7 +7,7 @@ layout: page
 
      <div class="posts-list">
 
-        {% for post in paginator.posts %}
+        <!-- {% for post in paginator.posts %} -->
         <ul class="posts-list">
       
       {% assign category = page.category | default: page.title %}
@@ -65,7 +65,7 @@ layout: page
 
 
     </ul>
-      {% endfor %}
+      <!-- {% endfor %} -->
     </div>
   
   {% if paginator.total_pages > 1 %}
