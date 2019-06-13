@@ -68,15 +68,15 @@ layout: page
   {% if paginator.total_pages > 1 %}
   <ul class="pager main-pager">
     {% if paginator.previous_page %}
-    <li class="previous">
+    <!-- <li class="previous">
       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer</a>
-    </li>
+    </li> -->
     {% endif %}
     {% include pagination.html %}
     {% if paginator.next_page %}
-    <li class="next">
+    <!-- <li class="next">
       <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &rarr;</a>
-    </li>
+    </li> -->
     {% endif %}
   </ul>
   {% endif %}
