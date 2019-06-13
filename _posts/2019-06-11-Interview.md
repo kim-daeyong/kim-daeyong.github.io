@@ -1,12 +1,14 @@
 ---
 layout: post
-title: 19-06-11
+title: 인터뷰
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
 tags: [Interview]
 categories : [Other]
 ---
+
+정리 해두자
 
 1) 자바의 특징에 대해 말해보시오.
 
@@ -925,3 +927,83 @@ ex) 소시지빵, 참치빵 ( 주요 패티만 다르고 빵과 양상추는 동
 조금 더 자세히 설명하면 공통기능은 상위 클래스에서 정의하고 확장 or 변화가 필요한 부분만 서브 클래스에서 구현하는 것이다.
 
 
+ORM(Object-relational mapping)을 단순하게 표현하면 객체와 관계와의 설정
+
+
+
+
+스프링 MVC 
+
+리퀘스트가 들어오면 디스팻쳐서블릿이 핸들러맵핑으로 알맞은 컨트롤러의 정보를 찾아 핸들러아답터에 넘겨 콘트롤러를 실행한다.
+그럼 컨트롤러에서 서비스를 실행해 값을 MODEL 객체에 담아 View 이름으로 디스팻처 서블릿에 넘기면 뷰 리졸버가 해당하는 view를 만들어 보낸다.
+
+restcontroller 같은 경우에는 서비스 실행 후 메세지컨버터를 통해 view resolver를 통하지않고 바로 리스폰스로 준다,
+
+
+* 컨테이너
+
+- 컨테이너는 인스턴스의 생명주기를 관리한다.
+
+- 생성된 인스턴스들에게 추가적인 기능을 제공한다. 
+
+- bean은 컨테이너가 관리해주는 인스턴스
+
+​
+
+* IoC
+
+- 라이브러리 - 남이 만든걸 내가 씀
+
+- 프레임워크 - 내가 만든걸 다른게 쓴다.(스프링이 내 인스턴스를 쓰듯이)
+
+- ioc : Inversion of Controll 제어의 역전 
+
+- 개발자가 코드 작성 시 그 흐름의 제어를 개발자가 하는게 아니라 프로그램이 하는 것 
+
+​
+
+* IoC 컨테이너
+
+- (인터페이스) BeanFactory - 가장 기본적인, 빈의 객체에 대한 생성과 제공 담당, 라이프사이클 관리 
+
+- (인터페이스) ApplicationContext - 스프링이 구현, BeanFactory가 제공하는 모든 기능 제공, 컨테이너 생성시 모든 빈 정보를 메모리에 로딩 
+
+- (인터페이스) WebApplicationContext - 웹환경에서 사용할 때 필요한 기능이 추가된 것 
+
+​
+
+* DI 
+
+- Dependency Injection 의 약자로 의존성 주입이라는 뜻
+
+​
+
+* ApplicationContext (스프링 빈 컨테이너)
+
+- AnnotationConfigApplicationContext - 하나 이상의 Java Config 클래스에서 스프링애플리케이션 컨텍스트를 로딩 
+
+- ClassPathXmlApplicationContext - 클래스패스에 위치한 XML파일에서 컨텍스트를 로딩 
+
+​
+
+* Bean의 생명주기 
+
+1. 스프링이 빈을 인스턴스화 
+
+2. 스프링이 값과 빈의 래퍼런스를 빈의 프로퍼티로 주입 
+
+3. 빈이 BaenNameAware를 구현하면 스프링이 빈의 iD를 setBeanName() 메소드에 넘긴다.
+
+4. 빈이 BeanFactoryAware를 구현하면 setBeanFactory() 메소드를 호출하여 빈 팩토리 전체를 넘긴다.
+
+5. ApplicationAware - setApplicationContext()메소드 호출, 참조를 넘긴다.
+
+6. BeanPostProcessor - postProcessBeforInitialization 메소드 호출
+
+7. InitialzingBean - afterPropertiesSet(), 지정한 초기화 메소드 호출
+
+8. BeanPostProcessor 구현 - postProcessAfterInirialzation() 메소드 호출
+
+9. 빈은 어플리케이션에서 사용할 준비가 완료, 애플리케이션 컨텍스트가 소멸될때까지 컨텍스트에 남아있음 
+
+10. 빈은 DisposavleBean인터페이스를 구현하면 스프링은 destroy()메소드 호출 
