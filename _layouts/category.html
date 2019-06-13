@@ -13,6 +13,7 @@ layout: page
       {% assign category = page.category | default: page.title %}
       {% for post in site.categories[category] %}
 
+      {% for post in paginator.categories[category] %}
 
         <article class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl }}">
@@ -60,7 +61,7 @@ layout: page
           {% endif %}
       
          </article>
-
+         {% endfor %}
       {% endfor %}
 
 
