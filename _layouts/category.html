@@ -4,16 +4,10 @@ layout: page
 
 <!-- default에서 page로 변경함 -->
 
-
-     <!-- <div class="posts-list"> -->
-
-        <!-- {% for post in paginator.posts %} -->
         <ul class="posts-list">
       
       {% assign category = page.category | default: page.title %}
       {% for post in site.categories[category] %}
-
-      <!-- {% for post in paginator.categories[category] %} -->
 
         <article class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl }}">
@@ -62,15 +56,9 @@ layout: page
       
          </article>
          {% endfor %}
-      <!-- {% endfor %} -->
-
-
     </ul>
-      <!-- {% endfor %} -->
-      
-    <!-- </div> -->
   
-  {% if paginator.total_pages > 1 %}
+  <!-- {% if paginator.total_pages > 1 %}
   <ul class="pager main-pager">
     {% if paginator.previous_page %}
     <li class="previous">
@@ -84,4 +72,4 @@ layout: page
     </li>
     {% endif %}
   </ul>
-  {% endif %}
+  {% endif %} -->
