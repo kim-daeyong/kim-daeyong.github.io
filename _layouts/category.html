@@ -3,11 +3,15 @@ layout: page
 ---
 
 <!-- default에서 page로 변경함 -->
+<div style="position: fixed; top: 10px; right: 15px;">
+    <a href="#bottom">아래로 이동</a>
+    </div>
 
-{% assign category = page.category | default: page.title %}
-{% for post in site.categories[category] %}
+{% for post in paginator.site.categories[category] %}
      <div class="posts-list">
-        {% for post in paginator.posts %}
+      {% assign category = page.category | default: page.title %}
+      {% for post in site.categories[category] %}
+
         <article class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl }}">
           <h2 class="post-title">{{ post.title }}</h2>
