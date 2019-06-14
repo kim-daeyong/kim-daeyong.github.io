@@ -4,11 +4,9 @@ layout: page
 
 <!-- default에서 page로 변경함 -->
 
+
+{% for post in paginator.posts %}
      <div class="posts-list">
-
-
-        <!-- <ul class="posts-list"> -->
-      
       {% assign category = page.category | default: page.title %}
       {% for post in site.categories[category] %}
 
@@ -59,8 +57,9 @@ layout: page
       
          </article>
          {% endfor %}
-    <!-- </ul> -->
     </div>
+
+    {% endfor %}
 
   
   {% if paginator.total_pages > 1 %}
