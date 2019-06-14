@@ -25,7 +25,6 @@ description: WOW!
 navbar-links:
   About Me: "aboutme"
   Category:
-    - 아래로: "#bottom"
     - Java: "https://kim-daeyong.github.io/category/Java"
     - Front,JS: "https://kim-daeyong.github.io/category/Front"
     - JSP/Web : "https://kim-daeyong.github.io/category/JSP"
