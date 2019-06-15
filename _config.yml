@@ -24,6 +24,9 @@ description: WOW!
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+    - Github : "https://github.com/Kim-Daeyong"
+    - Email: "kdy2353@gmail.com"
+
   Category:
     - Java: "https://kim-daeyong.github.io/category/Java"
     - Front,JS: "https://kim-daeyong.github.io/category/Front"
@@ -89,7 +92,7 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: true
+  rss: false
   email: "kdy2353@gmail.com"
 #  facebook: 
   github: kim-daeyong
