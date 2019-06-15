@@ -26,7 +26,7 @@ navbar-links:
   About Me: 
     - Profile : "aboutme"
     - Github : "https://github.com/Kim-Daeyong"
-    - Email: "kdy2353@gmail.com"
+    - Email: kdy2353@gmail.com
 
   Category:
     - Java: "https://kim-daeyong.github.io/category/Java"
