@@ -23,11 +23,8 @@ description: WOW!
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: 
-    - Profile : "aboutme"
-    - Github : "https://github.com/Kim-Daeyong"
-    - Email: kdy2353@gmail.com
-
+  About Me: "aboutme"
+  
   Category:
     - Java: "https://kim-daeyong.github.io/category/Java"
     - Front,JS: "https://kim-daeyong.github.io/category/Front"

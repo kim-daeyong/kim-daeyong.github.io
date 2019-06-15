@@ -1,5 +1,5 @@
 
-<ul id="pagination" role="navigation">
+<ul id="pagination" role="navigation" class="pager main-pager">
     {% if paginator %}
         {% if paginator.total_pages <= 5 %}
             {% assign first = 1 %}
@@ -16,11 +16,16 @@
         {% endif %}
 
         {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Prev</a>
-          {% else %}
+        <li class="previous">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer</a>
+        </li>
+    {% else %}
+        <li class="previous">
           <span>&larr; Prev</span>
-        {% endif %}
-        
+        </li>
+  {% endif %}
+
+
         {% for p in (first..last) %}
             {% if p == paginator.page %}
                 <li class="page-item active">{{ p }}</li>
@@ -33,10 +38,17 @@
         {% endfor %}
 
         {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">next &rarr;</a>
-          {% else %}
-          <span>next &rarr;</span>
+        <li class="next">
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &rarr;</a>
+        </li> 
+      
+        {% else %}
+          <li class="next">
+              <span>next &rarr;</span>
+          </li> 
         {% endif %} 
+
+
         
     {% endif %}
 </ul>
@@ -44,14 +56,23 @@
 
 <!-- <ul class="pager main-pager"> 
    {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer</a>
-  </li>
+        <li class="previous">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer</a>
+        </li>
+    {% else %}
+        <li class="previous">
+          <span>&larr; Prev</span>
+        </li>
   {% endif %}
   
   {% if paginator.next_page %}
   <li class="next">
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &rarr;</a>
   </li> 
+
+  {% else %}
+    <li class="next">
+        <span>next &rarr;</span>
+    </li> 
   {% endif %} 
 </ul>  -->
