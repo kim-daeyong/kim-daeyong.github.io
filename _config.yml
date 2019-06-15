@@ -23,7 +23,8 @@ description: WOW!
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  About Me: 
+    - Profile : "aboutme"
     - Github : "https://github.com/Kim-Daeyong"
     - Email: "kdy2353@gmail.com"
 
