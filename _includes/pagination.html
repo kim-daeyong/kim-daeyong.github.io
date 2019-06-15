@@ -2,7 +2,7 @@
 <ul id="pagination" role="navigation" class="pager main-pager" style="width:100%; text-align: center">
     {% if paginator %}
     {% assign first_page_path = site.paginate_path | replace: 'page:num', '' | replace: '//', '/' | relative_url %}
-    <ul id="pageul" >
+    <ul id="pageul" style="text-align: center">
       {% comment %} Link for previous page {% endcomment %}
       {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
