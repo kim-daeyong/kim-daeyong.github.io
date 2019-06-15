@@ -34,6 +34,7 @@ navbar-links:
     - Other: "https://kim-daeyong.github.io/category/Other"
     - Algorithm: "https://kim-daeyong.github.io/category/Algorithm"
     - Today's_Think : "https://kim-daeyong.github.io/category/TT"
+    - Log : "log"
     - Tags : "https://kim-daeyong.github.io/tags/"
     
   # Tag : 
