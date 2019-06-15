@@ -6,14 +6,14 @@ title: log
 {% assign postsByMonth = site.posts | group_by_exp:"post", "post.date | date: '%b %Y'" %}
 {% for month in postsByMonth %}
 
-<h1 style="color:blue; border-bottom:1px solid blue" id="{{ month.name | slugify }}" class="archive__subtitle">{{ month.name }}</h1>
+<h1 style="color:green; border-bottom:2px solid green" id="{{ month.name | slugify }}" class="archive__subtitle">{{ month.name }}</h1>
 
 {% for post in month.items %}
 
 <div class="posts-list">
     <article class="post-preview">
         <a href="{{ post.url | prepend: site.baseurl }}">
-            <h2 class="post-title">{{ post.title }}</h2>
+            <h3 class="post-title">{{ post.title }}</h3>
             {% if post.subtitle %}
             <h3 class="post-subtitle">
                 {{ post.subtitle }}
