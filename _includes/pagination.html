@@ -1,17 +1,17 @@
 {% if paginator.total_pages > 1 %}
 <ul id="pagination" role="navigation" class="pager main-pager" style="width:80%">
     {% if paginator %}
-    {% assign first_page_path = site.paginate_path | replace: 'page:1', '' | replace: '//', '/' | relative_url %}
+    {% assign first_page_path = https://kim-daeyong.github.io/ %}
     <ul>
       {% comment %} Link for previous page {% endcomment %}
       {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-          <li><a href="{{ first_page_path }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></li>
+          <li><a href="{{ first_page_path }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Prev" }}</a></li>
         {% else %}
-          <li><a href="{{ site.paginate_path | replace: ':num', paginator.previous_page | replace: '//', '/' | relative_url }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></li>
+          <li><a href="{{ site.paginate_path | replace: ':num', paginator.previous_page | replace: '//', '/' | relative_url }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Prev" }}</a></li>
         {% endif %}
       {% else %}
-      <li><a href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</span></a></li>
+      <li><a href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[site.locale].pagination_previous | default: "Prev" }}</span></a></li>
       {% endif %}
   
       {% comment %} First page {% endcomment %}
