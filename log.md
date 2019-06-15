@@ -41,4 +41,6 @@ title: log
         </div>
     </article>
 </div>
+  {% endfor %}
+{% endfor %}
 
