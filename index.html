@@ -9,7 +9,7 @@ use-site-title: true
 <div class="posts-list">
   {% for post in paginator.posts %}
 
-  {% if post.tags != "TT" %}
+  {% if post.tags.size > 2 %}
 
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
