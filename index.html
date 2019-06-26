@@ -4,10 +4,13 @@ title: Dev.
 subtitle: travelog
 use-site-title: true
 ---
-{% if post.tags != "TT" %}
+
 
 <div class="posts-list">
   {% for post in paginator.posts %}
+
+  {% if post.tags != "TT" %}
+
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
@@ -54,10 +57,11 @@ use-site-title: true
     {% endif %}
 
    </article>
+
+   {% endif %}
+
   {% endfor %}
 </div>
-
-{% endif %}
 
 {% if paginator.total_pages > 1 %}
 
