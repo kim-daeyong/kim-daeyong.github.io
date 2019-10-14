@@ -108,6 +108,8 @@ docker run -dit --name kafka_test -v /data/test/:/kafka/ -p 9092:9092 kafka_samp
 
 -p : port 설정
 
+
+사용할때 리스너나 사용할 포트를 server.properties에 넣는 스크립트를 짜서 -e를 이용해 환경변수로 넣어주는 것도 좋은 것 같다.
 ---
 >코멘트
 그냥 간단하게 kafka image를 dockerfile을 이용해 작성하는 방법을 적어봤다.  
