@@ -5,7 +5,7 @@ subtitle:
 gh-repo: 
 gh-badge: [star, fork, follow]
 tags: [Interview]
-categories : [Other]
+categories : [CS]
 ---
 
 정리 해두자

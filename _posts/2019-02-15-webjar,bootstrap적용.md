@@ -4,7 +4,7 @@ title: web jar, 부트스트랩적용
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
-tags: [Spring]
+tags: [Spring ,CICD]
 comments : true
 categories : [Spring]
 ---

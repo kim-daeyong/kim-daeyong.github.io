@@ -4,7 +4,7 @@ title: JPQL, fetch, join?
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
-tags: [SpringBoot]
+tags: [SpringBoot, Jpa]
 categories : [Spring]
 ---
 

@@ -5,7 +5,7 @@ subtitle:
 gh-repo: 
 gh-badge: [star, fork, follow]
 tags: [Study, Spring]
-categories : [Other]
+categories : [Java]
 ---
 
 일단 에러와 예외가 있는데

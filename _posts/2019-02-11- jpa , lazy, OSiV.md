@@ -4,7 +4,7 @@ title: lazy,OSiV
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
-tags: [SpringBoot]
+tags: [SpringBoot, Jpa]
 comments : true
 categories : [Spring]
 ---
