@@ -5,7 +5,7 @@ subtitle:
 gh-repo: 
 gh-badge: [star, fork, follow]
 tags: [Docker, Kafka]
-categories : [Other]
+categories : [Opensource]
 ---
 
 

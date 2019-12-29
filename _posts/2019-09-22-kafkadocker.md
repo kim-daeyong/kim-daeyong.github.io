@@ -5,7 +5,7 @@ subtitle:
 gh-repo: 
 gh-badge: [star, fork, follow]
 tags: [Docker, Kafka]
-categories : [Other]
+categories : [Opensource]
 ---
 
 간단하게 도커에 카프카를 설치하는 방법을 적어둔다. 이후에 DockerFile 작성이나 EntryPoint등에 대해 적을 것이다.  
