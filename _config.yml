@@ -18,7 +18,7 @@ baseurl: ""
 title: KDY's
 
 # Short description of your site
-description: WOW!
+description: Something went wrong..
 
 # --- Navigation bar options --- #
 
@@ -28,15 +28,15 @@ navbar-links:
   
   Category:
     - Java: "https://kim-daeyong.github.io/category/Java"
-    - Spring: "https://kim-daeyong.github.io/category/Spring"
+    # - Spring: "https://kim-daeyong.github.io/category/Spring"
     - Python: "https://kim-daeyong.github.io/category/Python"
-    - Front,JS: "https://kim-daeyong.github.io/category/Front"
-    - Opensource: "https://kim-daeyong.github.io/category/Opensource"
-    - Docker_K8S: "https://kim-daeyong.github.io/category/DocK8s"
+    - Front: "https://kim-daeyong.github.io/category/Front"
+    # - Opensource: "https://kim-daeyong.github.io/category/Opensource"
+    - Infra: "https://kim-daeyong.github.io/category/Infra"
     - DB: "https://kim-daeyong.github.io/category/DB"
-    - CS : "https://kim-daeyong.github.io/category/Web"
+    - CS : "https://kim-daeyong.github.io/category/CS"
     - Other: "https://kim-daeyong.github.io/category/Other"
-    - Algorithm: "https://kim-daeyong.github.io/category/Algorithm"
+    - any: "https://kim-daeyong.github.io/category/Any"
    # - Today's_Think : "https://kim-daeyong.github.io/category/TT"
     - Log : "log"
     - Tags : "https://kim-daeyong.github.io/tags/"
