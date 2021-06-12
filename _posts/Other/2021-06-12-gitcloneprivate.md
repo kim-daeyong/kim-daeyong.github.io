@@ -1,6 +1,6 @@
 ---
 layout: post
-title: gitignore를 이미 push된 repository에 추가할 때
+title: git private repository clone 방법
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
@@ -11,7 +11,7 @@ categories : [Other]
 ### git private repository clone 방법
 
 ``` 
-$ git clone https://사용자의NAME:비밀번호@github.com/저장소를판유저이름/저장소이름 
+$ git clone https://username:password@github.com/username/repository 
 
 ``` 
 이때 특수문자가 들어간다면 url encoding 해서 넣는다.
