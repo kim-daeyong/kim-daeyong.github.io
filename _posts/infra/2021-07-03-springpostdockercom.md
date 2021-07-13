@@ -23,9 +23,6 @@ categories : [Infra]
     'ENTRYPOINT ["./gradlew", "bootRun"]'로 실행하는 방법도 있을 것이다. 
 
 
-------------
-
-
 2. 해당 프로젝트를 빌드해 jar를 생성한다.
 
     Gradle을 사용하였는데 테스트를 제외하고 build하는 command는 다음과 같다.  
@@ -33,15 +30,12 @@ categories : [Infra]
     ./gradlew build --exclude-task test
     ```
 
------------
 
 3. Docker build를 실행해 image 파일로 만들어 준다.
 
     ```
     docker build -t testapp .
     ```
-
-------------
 
 4. 다음 docker-compose.yml 파일을 작성해 준다.
 
@@ -95,9 +89,6 @@ categories : [Infra]
         - networks : network를 지정합니다.
         - build: 빌드에 사용될 사항을 정의합니다. dockerfile: Dockerfile로 도커파일도 지정 가능합니다. context: 로 해당 소스의 path를 지정할 수 있습니다.  
         등이 있습니다.
-
-------------
-
 5. docker-compose를 실행합니다.
     ```
     docker-compose up
