@@ -4,8 +4,8 @@ title: 프로젝트 진행 순서
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
-tags: [TT]
-categories : [TT]
+tags:  
+categories :  
 ---
 
 1. 프토로타이핑
