@@ -133,3 +133,5 @@ categories : [Infra]
 	kubectl describe {resource name} -n {namespace} 로 자세하게 해당 리소스의 상태를 확인가능하다.
 	```
 
+---
+
