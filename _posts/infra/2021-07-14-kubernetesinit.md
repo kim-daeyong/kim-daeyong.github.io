@@ -56,17 +56,18 @@ categories : [Infra]
 	```
 
 	1.20이후로 docker runtime대신 containerd나 다른 CRI를 지원하게 된다고 한다. 1.22에서 더이상 지원되지않는다고 함
-	그래서 1.19로 일단 편하게..
+	현재 버전에서 deprecate 되었는지 모르겠으나 1.19로 일단 편하게..
 	[참조](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/)
 
 4. Kubenetes Master Cluster 구성
 
 	4-1. kubeadm 을 이용하여 master 노드 구성
+		```
+		$ kubeadm init --pod-network-cidr=<IP>/16 --apiserver-advertise-address=<host ip>
 
-	$ kubeadm init --pod-network-cidr=<IP>/16 --apiserver-advertise-address=<host ip>
-
-		• --pod-network-cidr 의 IP는 host ip와 다르게 해줘야 한다.
-		• 현재 사용중인 CNI Calico의 설정은 172.126.0.0/16
+			• --pod-network-cidr 의 IP는 host ip와 다르게 해줘야 한다.
+			• 현재 사용중인 CNI Calico의 설정은 172.126.0.0/16
+		```
 
 	4-2. KUBECONFIG 권한 설정
 		```
