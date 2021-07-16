@@ -8,6 +8,8 @@ tags: [Infra, k8s]
 categories : [Infra]
 ---
 
+### kubernetes 기본 설치 및 dashboard 배포 방법
+
 1. Docker 설치
     ```
 	$ sudo apt-get update
@@ -135,3 +137,4 @@ categories : [Infra]
 
 ---
 
+이외에 helm 이라는  package managing tool을 이용해 다양한 서비스를 편하게 배포할 수 있다.
