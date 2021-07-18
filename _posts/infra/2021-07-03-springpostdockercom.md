@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Springboot + postreSQL docker-compose!
+title: Springboot + postgreSQL docker-compose!
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
