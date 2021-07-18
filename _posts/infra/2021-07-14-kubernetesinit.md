@@ -77,27 +77,27 @@ categories : [Infra]
 		$ cp /etc/kubernetes/admin.conf ~/.kube/config // 로그인된 사용자가 항상 kubectl를 사용할 수 있도록 kubeconfig 파일을 복사
 		```
 
-		4-3 node 확인
+	4-3 node 확인
 
 		```
 		kubectl get node
 		```
 
 
-		4-3. CNI 설치 (calico 이용)
+	4-3. CNI 설치 (calico 이용)
 
 		```
 		$ kubectl apply -f calico/calico.yaml
 		```
 
 
-		4-4. Master 노드 pod 생성 방지 해제
+	4-4. Master 노드 pod 생성 방지 해제
 
 		```
 		$ kubectl taint nodes --all node-role.kubernetes.io/master-
 		```
 
-		4-5. Worker node의 Master node join
+	4-5. Worker node의 Master node join
 
 		• Join command 조회
 		```
