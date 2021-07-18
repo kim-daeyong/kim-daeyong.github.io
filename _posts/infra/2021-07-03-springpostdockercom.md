@@ -11,7 +11,7 @@ categories : [Infra]
 
 ### Spring project를 PostgreSQL과 함께 docker-compose로 배포하는 방법
 
-1. 먼저 spring poject 안에 Dockerfile을 만들어준다.
+1. 먼저 spring project 안에 Dockerfile을 만들어준다.
 
     ``` Dockerfile
     FROM openjdk:12-alpine 
