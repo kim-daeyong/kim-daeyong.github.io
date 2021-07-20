@@ -6,12 +6,12 @@
       {% comment %} Link for previous page {% endcomment %}
       {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-          <li><a style= "background-color: #17202A" href="{{ site.url }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "&larr;" }}</a></li>
+          <li><a style= "background-color: #17202A" href="{{ site.url }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "&lsaquo;" }}</a></li>
         {% else %}
           <li><a style= "background-color: #17202A" href="{{ site.paginate_path | replace: ':num', paginator.previous_page | replace: '//', '/' | relative_url }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "&larr;" }}</a></li>
         {% endif %}
       {% else %}
-      <li><a style= "background-color: #17202A" href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[site.locale].pagination_previous | default: "&larr;" }}</span></a></li>
+      <li><a style= "background-color: #17202A" href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[site.locale].pagination_previous | default: "&lsaquo;" }}</span></a></li>
       {% endif %}
   
       {% comment %} First page {% endcomment %}
@@ -63,9 +63,9 @@
   
       {% comment %} Link next page {% endcomment %}
       {% if paginator.next_page %}
-        <li><a style= "background-color: #17202A" href="{{ site.paginate_path | replace: ':num', paginator.next_page | replace: '//', '/' | relative_url }}">{{ site.data.ui-text[site.locale].pagination_next | default: "&rarr;" }}</a></li>
+        <li><a style= "background-color: #17202A" href="{{ site.paginate_path | replace: ':num', paginator.next_page | replace: '//', '/' | relative_url }}">{{ site.data.ui-text[site.locale].pagination_next | default: "&rsaquo;" }}</a></li>
       {% else %}
-        <li><a style= "background-color: #17202A" href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[site.locale].pagination_next | default: "&rarr;" }}</span></a></li>
+        <li><a style= "background-color: #17202A" href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[site.locale].pagination_next | default: "&rsaquo;" }}</span></a></li>
       {% endif %}
     </ul>
     {% endif %}

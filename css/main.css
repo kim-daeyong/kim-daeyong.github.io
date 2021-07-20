@@ -607,6 +607,7 @@ footer .theme-by {
   background-color: #FFF;
   border-radius: 0;
   color: #FBFCFC;
+  width: 8%
 }
 @media only screen and (min-width: 768px) {
   .pager li a {
