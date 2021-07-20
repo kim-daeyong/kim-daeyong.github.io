@@ -270,7 +270,7 @@ img {
 
 footer {
   padding: 30px 0;
-  border-top: 1px #EAEAEA solid;
+  /* border-top: 1px #EAEAEA solid; */
   margin-top: 50px;
   font-size: 14px;
   background-color: {{ site.footer-col }};
@@ -600,23 +600,24 @@ footer .theme-by {
 .pager li a {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 800;
   letter-spacing: 1px;
   padding: 10px 5px;
   background-color: #FFF;
   border-radius: 0;
   color: #FBFCFC;
+  width: 8%
 }
 @media only screen and (min-width: 768px) {
   .pager li a {
-    padding: 15px 25px;
+    padding: 15px 15px;
   }
 }
 .pager li a:hover,
 .pager li a:focus {
   color: #FFF;
-  border: 1px solid {{ site.hover-col }};
+  /* border: 1px solid {{ site.hover-col }}; */
   background-color: {{ site.hover-col }};
 }
 
