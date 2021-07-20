@@ -64,6 +64,7 @@ categories : [Infra]
 4. Kubenetes Master Cluster 구성
 
 	4-1. kubeadm 을 이용하여 master 노드 구성
+
 		```
 		$ kubeadm init --pod-network-cidr=<IP>/16 --apiserver-advertise-address=<host ip>
 
@@ -72,6 +73,7 @@ categories : [Infra]
 		```
 
 	4-2. KUBECONFIG 권한 설정
+	
 		```
 		$ export KUBECONFIG=/etc/kubernetes/admin.conf // 임시로 설정
 		$ cp /etc/kubernetes/admin.conf ~/.kube/config // 로그인된 사용자가 항상 kubectl를 사용할 수 있도록 kubeconfig 파일을 복사
