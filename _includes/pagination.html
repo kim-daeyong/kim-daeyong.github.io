@@ -1,5 +1,5 @@
 {% if paginator.total_pages > 1 %}
-<ul id="pagination" role="navigation" class="pager main-pager" style="width:100%; text-align: center">
+<ul id="pagination" role="navigation" class="pager main-pager" style="width:100%; text-align: center; border-top: 1px solid #eee;">
     {% if paginator %}
     {% assign first_page_path = site.paginate_path | replace: 'page:num', '' | replace: '//', '/' | relative_url %}
     <ul id="pageul" style="display:inline; text-align: center; padding-inline-start:0px">
@@ -8,7 +8,7 @@
         {% if paginator.previous_page == 1 %}
           <li><a style= "background-color: #17202A" href="{{ site.url }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "&lsaquo;" }}</a></li>
         {% else %}
-          <li><a style= "background-color: #17202A" href="{{ site.paginate_path | replace: ':num', paginator.previous_page | replace: '//', '/' | relative_url }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "&larr;" }}</a></li>
+          <li><a style= "background-color: #17202A" href="{{ site.paginate_path | replace: ':num', paginator.previous_page | replace: '//', '/' | relative_url }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "&lsaquo;" }}</a></li>
         {% endif %}
       {% else %}
       <li><a style= "background-color: #17202A" href="#" class="disabled"><span aria-hidden="true">{{ site.data.ui-text[site.locale].pagination_previous | default: "&lsaquo;" }}</span></a></li>
