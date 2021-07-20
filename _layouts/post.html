@@ -66,8 +66,11 @@ layout: base
       </ul>
 
       {% if page.comments %}
-        <div class="disqus-comments">
+        <!-- <div class="disqus-comments">
           {% include disqus-comments.html %}
+        </div> -->
+        <div class="utterance-comments">
+          {% include comments.html %}
         </div>
           {% include fb-comment.html %}
       {% endif %}
