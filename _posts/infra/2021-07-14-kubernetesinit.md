@@ -57,57 +57,57 @@ categories : [Infra]
 	$ sudo apt install kubelet=1.19.5-00 kubeadm=1.19.5-00 kubectl=1.19.5-00 kubernetes-cni=0.8.7--00
 	```
 
-	1.20이후로 docker runtime대신 containerd나 다른 CRI를 지원하게 된다고 한다. 1.22에서 더이상 지원되지않는다고 함
-	현재 버전에서 deprecate 되었는지 모르겠으나 1.19로 일단 편하게..
+	1.20이후로 docker runtime대신 containerd나 다른 CRI를 지원하게 된다고 한다.   
+	1.22에서 더이상 지원되지않는다고 함  
+	현재 버전에서 deprecate 되었는지 모르겠으나 1.19로 일단 편하게..  
 	[참조](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/)
 
 4. Kubenetes Master Cluster 구성
 
 	4-1. kubeadm 을 이용하여 master 노드 구성
 
-		```
 		$ kubeadm init --pod-network-cidr=<IP>/16 --apiserver-advertise-address=<host ip>
 
 			• --pod-network-cidr 의 IP는 host ip와 다르게 해줘야 한다.
 			• 현재 사용중인 CNI Calico의 설정은 172.126.0.0/16
-		```
+		
 
 	4-2. KUBECONFIG 권한 설정
-	
-		```
+
+		
 		$ export KUBECONFIG=/etc/kubernetes/admin.conf // 임시로 설정
 		$ cp /etc/kubernetes/admin.conf ~/.kube/config // 로그인된 사용자가 항상 kubectl를 사용할 수 있도록 kubeconfig 파일을 복사
-		```
+		
 
 	4-3 node 확인
 
-		```
-		kubectl get node
-		```
+		
+		$ kubectl get node
+		
 
 
 	4-3. CNI 설치 (calico 이용)
 
-		```
+		
 		$ kubectl apply -f calico/calico.yaml
-		```
+		
 
 
 	4-4. Master 노드 pod 생성 방지 해제
 
-		```
+		
 		$ kubectl taint nodes --all node-role.kubernetes.io/master-
-		```
+		
 
 	4-5. Worker node의 Master node join
 
 		• Join command 조회
-		```
+		
 		$ kubeadm token create --print-join-command
-		```
-		```
+		
+		
 		$ kubeadm join <IP>:6443 --token us5yob.zif032vatynjeci3     --discovery-token-ca-cert-hash sha256:480bd892953aa0fc8b538fb5e5e90263a67ffe4060b2be3e26fb48b6f8e71e63
-		```
+		
 
 5. Dashboard 설치
 
@@ -118,7 +118,7 @@ categories : [Infra]
 
 	$ kubectl create -f recommended.yaml 
 
-	$ kubectl delete -f filename이나 {resource name}으로 삭제 가능
+	$ kubectl delete -f filename이나 {resource name} -n {namespace}으로 삭제 가능
 	```
 
 	로 설치 가능
