@@ -40,6 +40,7 @@ navbar-links:
    # - Today's_Think : "https://kim-daeyong.github.io/category/TT"
     - Log : "log"
     - Tags : "https://kim-daeyong.github.io/tags/"
+  Timeline: "timeline"
     
   # Tag : 
   #   - Java: "https://kim-daeyong.github.io/tags/#JAVA"

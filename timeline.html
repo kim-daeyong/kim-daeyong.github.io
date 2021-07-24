@@ -1,0 +1,52 @@
+---
+layout: page
+title: "Timeline"
+---
+
+<div class="timeline_introduce">현재까지 {{ site.posts.size }}개의 포스트를 작성했어요.</div>
+
+{% assign curYear = "now" | date : "%Y" %}
+{% for post in site.posts %}
+<div class="timeline_box">
+    {% assign postYear = post.date | date: '%Y' %}
+    {% if postYear != curYear %}
+        {% assign curYear = postYear %}
+        {% if containerType == 'left' %}
+            {% assign containerType = 'right' %}
+        {% else %}
+            {% assign containerType = 'left' %}
+        {% endif %}
+    <div class="timeline_container {{ containerType }}">
+        <div class="timeline_content">
+            <div class="timeline_title">{{ "now" | date : "%Y" }} : Happy New Year!</div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% assign postDay = post.date | date: '%d' %}
+    {% if postDay != day %}
+        {% assign day = postDay %}
+        {% if containerType == 'left' %}
+            {% assign containerType = 'right' %}
+        {% else %}
+            {% assign containerType = 'left' %}
+        {% endif %}
+    {% endif %}
+    <div class="timeline_container {{ containerType }}">
+        <div class="timeline_content">
+            <a href="{{ post.url }}">
+                <div class="timeline_title">{{ post.title }}</div>
+            </a>
+            <div class="timeline_date">{{ post.date | date: "%Y. %-m. %-d." }}</div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+<div class="timeline_box">
+    {% if containerType == 'left' %}
+        {% assign containerType = 'right' %}
+    {% else %}
+        {% assign containerType = 'left' %}
+    {% endif %}
+</div>
