@@ -5,6 +5,7 @@ title: log
 
 {% assign postsByMonth = site.posts | group_by_exp:"post", "post.date | date: '%b %Y'" %}
 {% for month in postsByMonth %}
+<div class="timeline_introduce">현재까지 {{ site.posts.size }}개의 포스트를 작성했어요.</div>
 
 <h1 style="color:green; border-bottom:2px solid green" id="{{ month.name | slugify }}" class="archive__subtitle">{{ month.name }}</h1>
 
