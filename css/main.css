@@ -10,7 +10,7 @@ layout: null
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
-  color: #FBFCFC;
+  color: #ECF0F1;
   position: relative;
   background-color: {{ site.page-col }};
   {% if site.page-img %}
@@ -333,7 +333,7 @@ footer .theme-by {
 
 .post-preview a {
   text-decoration: none;
-  color: #FBFCFC;
+  color: #ECF0F1;
 }
 
 .post-preview a:focus,
@@ -606,7 +606,7 @@ footer .theme-by {
   padding: 10px 5px;
   background-color: #FFF;
   border-radius: 0;
-  color: #FBFCFC;
+  color: #ECF0F1;
   width: 8%
 }
 @media only screen and (min-width: 768px) {
