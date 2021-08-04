@@ -76,13 +76,13 @@ navbar-links:
 # footer-text-col: "#777777"
 # footer-link-col: "#404040"
 
-navbar-col: "#17202A"
+navbar-col: "#161A20"
 navbar-text-col: "#FBFCFC"
-navbar-children-col: "#17202A"
-page-col: "#17202A"
+navbar-children-col: "#161A20"
+page-col: "#161A20"
 link-col: "#008AFF"
 hover-col: "#0085A1"
-footer-col: "#17202A"
+footer-col: "#161A20"
 footer-text-col: "#FBFCFC"
 footer-link-col: "#404040"
 
