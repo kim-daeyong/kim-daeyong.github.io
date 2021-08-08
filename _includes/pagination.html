@@ -58,7 +58,7 @@
       {% if paginator.page == paginator.total_pages %}
         <li><a style= "background-color: #1B1C1E; border:0px; font-weight:bold; color:gray" href="#" class="disabled current">{{ paginator.page }}</a></li>
       {% else %}
-        <li><a style= "background-color: #000000; border:0px" href="{{ site.paginate_path | replace: ':num', paginator.total_pages | replace: '//', '/' | relative_url }}">&raquo</a></li>
+        <li><a style= "background-color: #1B1C1E; border:0px" href="{{ site.paginate_path | replace: ':num', paginator.total_pages | replace: '//', '/' | relative_url }}">&raquo</a></li>
       {% endif %}
   
       {% comment %} Link next page {% endcomment %}
