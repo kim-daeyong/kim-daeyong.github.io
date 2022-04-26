@@ -19,15 +19,15 @@ categories : [Programming]
 
 * fetch join - 일반적인 조인은 연관관계는 고려하지않으나 fetch는 연관된 엔티티도 함께 조회한다.
 
-JPQL fetch join 사용법
-1) 공식문서 명령어 , [LEFT [OUTER] INNER] JOIN FETCH 조인경로
+JPQL fetch join 사용법  
+1) 공식문서 명령어 , [LEFT [OUTER] INNER] JOIN FETCH 조인경로  
 
-2) 엔티티 패치 조인
+2) 엔티티 패치 조인  
 
-ex) select m from parent p join fetch p.child
-연관된 엔티티나 컬렉션을 함께 조회한다. p와 p.child를 모두 검색한다.
-참고로 일반적인 JPQL은 별칭을 허용하지 않는다.
-하이버네이트는 페치 조인에도 별칭을 허용한다.
+ex) select m from parent p join fetch p.child  
+연관된 엔티티나 컬렉션을 함께 조회한다. p와 p.child를 모두 검색한다.  
+참고로 일반적인 JPQL은 별칭을 허용하지 않는다.  
+하이버네이트는 페치 조인에도 별칭을 허용한다.  
 
 ~~~
 select
@@ -45,10 +45,10 @@ inner join
 
 3) 컬렉션 패치 조인
 
-일 대 다 관계를 패치 조인 할 경우
-ex) select p from Parent p join fetch p.child where p.name = ‘child_name’
-연관된 child의 p.name의 값이 child_name과 동일한 모든값이 나온다
-또한 fetch join으로 인해서 지연로딩이 발생하지 않는다.
+일 대 다 관계를 패치 조인 할 경우  
+ex) select p from Parent p join fetch p.child where p.name = ‘child_name’  
+연관된 child의 p.name의 값이 child_name과 동일한 모든값이 나온다  
+또한 fetch join으로 인해서 지연로딩이 발생하지 않는다.  
 
 ~~~
 select
@@ -80,7 +80,19 @@ Parent parents = em.createQuery("" +
     .getSingleResult();
 System.out.println(parents);
 ~~~
-3. fetch join의 단점
-페치 조인 대상에는 별칭을 줄 수 없다.
-둘 이상의 컬렉션을 페치 할 수 없다.
-컬렉션을 페치 조인하면 페이징 API를 사용 할 수 없다.
+3. fetch join의 단점  
+    페치 조인 대상에는 별칭을 줄 수 없다.  
+    둘 이상의 컬렉션을 페치 할 수 없다.  
+    컬렉션을 페치 조인하면 페이징 API를 사용 할 수 없고 사용하면 안된다.
+    만약 페이징 쿼리를 사용한다면 하이버네이트는 경고를 하고 1대다 조인에 해당하는 뻥튀기된 모든 데이터를 조회해 이 결과를 메모리에서 페이징한다.  
+    데이터가 적다면 다행이지만 많은 데이터가 사용된다면 메모리는 아마..  
+    db에서 조회된 데이터와 괴리가 있기에 하이버네이트는 메모리에서 해준다.  
+    1:다가 아니라면 사용할 수 있다.  
+
+4. 페이징이 필요하다면
+
+    1. 컬렉션은 지연로딩한다.  
+    2. default_batch_fetch_size: 1000 옵션을 줘 지연로딩 최적화를 한다.(글로벌)  
+        적어논 갯수 만큼의 프록시 객체에 해당하는 데이터를 in 쿼리 로 한번에 조회한다.  
+    3. @BatchSize를 사용(개별 적용)  
+

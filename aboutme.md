@@ -6,7 +6,7 @@ subtitle: 개발자
 
 김대용 / Kim Daeyong  
 
-* Backend Server Developer
+* Backend Developer
 
 E-Mail : <kdy2353@gmail.com>  
 Github : [kim-daeyong](https://github.com/kim-daeyong)
