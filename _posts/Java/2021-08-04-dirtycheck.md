@@ -6,7 +6,7 @@ gh-repo:
 gh-badge: [star, fork, follow]
 tags: [SpringBoot, JPA]
 comments : true
-categories : [Java]
+categories : [Programming]
 ---
 
 ### 더티체킹이란 (dirty checking)

@@ -4,8 +4,8 @@ title: Thread 생성 방법
 subtitle:
 gh-repo:
 gh-badge: [star,fork,follow]
-tags: [JAVA]
-categories : [Java]
+tags: [java]
+categories : [Programming]
 ---
 
 쓰레드를 생성하는 방법은 크게 2가지가 있다.

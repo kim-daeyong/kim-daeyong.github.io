@@ -5,7 +5,7 @@ subtitle:
 gh-repo: 
 gh-badge: [star, fork, follow]
 tags: [SpringBoot, Jpa]
-categories : [Java]
+categories : [Programming]
 ---
 
 * JPQL 특징

@@ -4,8 +4,8 @@ title:  python 에서 gRPC 테스트 해보기
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
-tags: [Python, gRPC]
-categories : [Python]
+tags: [python, gRPC]
+categories : [Programming]
 ---
 
 ### gRPC란

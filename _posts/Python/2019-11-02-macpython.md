@@ -4,8 +4,8 @@ title:  맥에서 파이썬 버전 설정
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
-tags: [Python, Mac]
-categories : [Python]
+tags: [python, Mac]
+categories : [Programming]
 ---
 
 맥에서 brewdhk pyenv를 통해 파이썬 버전을 3.6.8버전을 받았다.  

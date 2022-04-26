@@ -6,7 +6,7 @@ gh-repo:
 gh-badge: [star, fork, follow]
 tags: [Spring ,CICD]
 comments : true
-categories : [Java]
+categories : [Programming]
 ---
 
 jquery, bootstrap  
