@@ -1,6 +1,6 @@
 ---
 layout: post
-title: @Transactional readOnly 옵션이 빠른 이유
+title: Transactional readOnly 옵션이 빠른 이유
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
