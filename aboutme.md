@@ -7,6 +7,9 @@ subtitle: 개발자
 김대용 / Kim Daeyong  
 
 * Backend Developer
+    * Java
+    * Python
+    * Go
 
 E-Mail : <kdy2353@gmail.com>  
 Github : [kim-daeyong](https://github.com/kim-daeyong)
