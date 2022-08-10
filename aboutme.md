@@ -8,7 +8,7 @@ subtitle: 개발자
 
 * Backend Developer
     * Java
-    * Typescript
+    * JavaScript & TypeScript
     * Python
     * Go
 
