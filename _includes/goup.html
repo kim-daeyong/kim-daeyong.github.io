@@ -1,5 +1,5 @@
 <div style="position: fixed; bottom: 10px; left: 15px;">
-    {% if include.type == "post" %}
+    {% if post.content %}
         {% include toc.html html=content %}
     {% endif %}
 </div>
