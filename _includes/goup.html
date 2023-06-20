@@ -1,4 +1,4 @@
-{% if header.html type="post" %}
+{% if include.type == "post" %}
     <div style="position: fixed; bottom: 10px; left: 15px;">
         {% include toc.html html=content %}
     </div>
