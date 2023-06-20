@@ -4,10 +4,20 @@
     </div>
 {% endif %} -->
 <div style="position: fixed; bottom: 10px; right: 15px;">
-    <button type="button" data-toggle="collapse">
-        <span>{% include toc.html html=content %}</span>
-    </button>
+    <a class="btn btn-primary" type="button" data-toggle="collapse" href="#tocCollapse" aria-expanded="false" aria-controls="tocCollapse">
+        <img src="/img/favicon.png" title="toc">
+    </a>
+    <div class="collapse" id="tocCollapse">
+        {% include toc.html html=content %}
+    </div>
     <a href="#top"><img src="/img/toup.png" title="위로 가기"></a><br />
     <a href="#godown"><img src="/img/todown.png" title="아래로 가기"></a>
 </div>
     
+
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
