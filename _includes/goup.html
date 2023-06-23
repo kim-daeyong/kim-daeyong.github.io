@@ -11,12 +11,12 @@
         {% include toc.html html=content %}
     </div>
 </div> -->
-<div style="position: fixed; bottom: 74px; right: 15px;">
+<div style="position: fixed; bottom: 74px; right: 15px; max-width: 50%">
     <div>
         <a data-toggle="collapse" href="#tocCollapse" aria-expanded="false" aria-controls="tocCollapse">
             <img src="/img/favicon.png" title="toc">
         </a>
-        <div class="collapse" id="tocCollapse" style="max-width: 80%; overflow-x: hidden; overflow-y: scroll;">
+        <div class="collapse" id="tocCollapse">
             {% include toc.html html=content %}
         </div>
     </div>
