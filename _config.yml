@@ -67,25 +67,27 @@ navbar-links:
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-# navbar-col: "#81BEF7"
-# navbar-text-col: "#404040"
-# navbar-children-col: "#F5F5F5"
-# page-col: "#FFFFFF"
-# link-col: "#008AFF"
-# hover-col: "#0085A1"
-# footer-col: "#FAFAFA"
-# footer-text-col: "#777777"
-# footer-link-col: "#404040"
-
-navbar-col: "#1B1C1E"
-navbar-text-col: "#ECF0F1"
-navbar-children-col: "#1B1C1E"
-page-col: "#1B1C1E"
+# LightMode
+navbar-col: "#99CCFF"
+navbar-text-col: "#404040"
+navbar-children-col: "#F5F5F5"
+page-col: "#FFFFFF"
 link-col: "#008AFF"
 hover-col: "#0085A1"
-footer-col: "#1B1C1E"
-footer-text-col: "#ECF0F1"
+footer-col: "#FAFAFA"
+footer-text-col: "#777777"
 footer-link-col: "#404040"
+
+# Dark mode
+# navbar-col: "#1B1C1E"
+# navbar-text-col: "#ECF0F1"
+# navbar-children-col: "#1B1C1E"
+# page-col: "#1B1C1E"
+# link-col: "#008AFF"
+# hover-col: "#0085A1"
+# footer-col: "#1B1C1E"
+# footer-text-col: "#ECF0F1"
+# footer-link-col: "#404040"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
