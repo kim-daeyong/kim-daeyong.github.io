@@ -15,6 +15,8 @@ aws cli 에서 여러가지 프로파일을 사용할 수도 있는 상황이 �
 이때 추가하는 방법.  
 
 ### CATCH  
+* profile 추가  
+
 ```
 $ aws configure --profile "profile name"
 
@@ -26,6 +28,8 @@ $ aws configure --profile "profile name"
   Default output format [None]: 
 ```  
 
+
+* 확인  
 ```
 $ cat ~/.aws/config
 
