@@ -15,6 +15,7 @@ aws cli 에서 여러가지 프로파일을 사용할 수도 있는 상황이 �
 이때 추가하는 방법.  
 
 ### CATCH  
+
 * profile 추가  
 
 ```
@@ -30,6 +31,7 @@ $ aws configure --profile "profile name"
 
 
 * 확인  
+
 ```
 $ cat ~/.aws/config
 
@@ -46,7 +48,7 @@ aws_secret_access_key = ~~~
 ["profile name"]
 aws_access_key_id = ~~~
 aws_secret_access_key = ~~~
-```
+```  
 
 ### FINALLY  
 IAM 마다 다른 권한을 가지고 있다면 local에서 사용할떄 여러 access key등을 사용하게 된다.  
