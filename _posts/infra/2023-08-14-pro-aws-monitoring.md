@@ -36,7 +36,7 @@ scrape_configs:
   - job_name: 'node_exporters'
     metrics_path: '/metrics'
     ec2_sd_configs: # node_exproter가 배포되어있는 ec2 instance 들의 metrics를 수집하고 싶다면.
-     - region: ap-northeast-2
+     - region: {your region}
        port: 9100
        access_key: ~~~
        secret_key: ~~~
@@ -56,7 +56,7 @@ scrape_configs:
   - job_name: 'jvm_exporter'
     metrics_path: '/actuator/prometheus'
     ec2_sd_configs: # spring ec2 instance 들의 actuator metrics를 수집하고 싶다면.
-     - region: ap-northeast-2
+     - region: {your region}
        port: 8080
        access_key: ~~~
        secret_key: ~~~
