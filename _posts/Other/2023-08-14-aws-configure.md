@@ -4,8 +4,8 @@ title: Aws Profile 추가
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
-tags: [AWS, Shell]
-categories : [Programming]
+tags: [AWS, Shell, Infra, Other]
+categories : [Infra]
 toc: true
 ---
 
