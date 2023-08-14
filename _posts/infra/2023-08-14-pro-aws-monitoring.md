@@ -4,8 +4,8 @@ title: Aws Instance Monitoring with Prometheus and Grafana
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
-tags: [AWS, Monitoring, Spring, Prometheus, Grafana]
-categories : [Programming]
+tags: [AWS, Monitoring, Spring, Prometheus, Grafana, Infra]
+categories : [Infra]
 toc: true
 ---
 
