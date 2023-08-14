@@ -29,7 +29,6 @@ $ aws configure --profile "profile name"
 ```
 $ cat ~/.aws/config
 
-$ cat ~/.aws/config 
 [default]
 region = ap-northeast-2
 [profile "profile name"]
@@ -37,7 +36,6 @@ region = ap-northeast-2
 
 $ cat ~/.aws/credentials  
 
-$ cat ~/.aws/credentials
 [default]
 aws_access_key_id = ~~~
 aws_secret_access_key = ~~~
