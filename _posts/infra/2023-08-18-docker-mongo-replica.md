@@ -45,39 +45,7 @@ services:
     hostname: mongo2
     container_name: mongo2
     image: arm64v8/mongo:6.0
-    ports:s sudo vim /etc/hosts
-
-127.0.0.1       mongo1
-127.0.0.1       mongo2
-127.0.0.1       mongo3
-
-mongosh --username=root --password=1234 --eval <<EOF
-  rs.initiate({
-    _id: "rs0",
-    members: [
-      { _id: 0, host: "mongo1:27017" },
-      { _id: 1, host: "mongo2:27018" },
-      { _id: 2, host: "mongo3:27019" }
-    ]
-  })
-EOF
-
-
-or
-
-
-127.0.0.1       host.docker.internal
-
-mongosh --username=root --password=1234 --eval <<EOF
-  rs.initiate({
-    _id: "rs0",
-    members: [
-      { _id: 0, host: "host.docker.internal:27017" },
-      { _id: 1, host: "host.docker.internal:27018" },
-      { _id: 2, host: "host.docker.internal:27019" }
-    ]
-  })
-EOF
+    ports:
       - "27018:27017"
     volumes:
       - ./data2:/data/db
