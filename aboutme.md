@@ -8,9 +8,9 @@ subtitle: 개발자
 
 * Backend Developer
     * Java
-    * JavaScript & TypeScript
     * Python
     * Go
+    * JavaScript & TypeScript / NodeJs
 
 E-Mail : <kdy2353@gmail.com>  
 Github : [kim-daeyong](https://github.com/kim-daeyong)
