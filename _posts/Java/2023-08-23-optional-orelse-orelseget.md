@@ -136,6 +136,7 @@ test
 
 `orElse`는 파라미터가 항상 호출된다.  
 `orElseGet`은 null 경우에만 Supplier 객체를 통해 메소드가 호출된다.  
+그래서 `orElseGet` 이 성능상 이점이 있다고 한다.  
 `orElse`와 비슷하게 테스트 해보면 다음과 같다.  
 
 ```java
