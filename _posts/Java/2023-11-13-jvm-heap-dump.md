@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: JVM heap dump
+title: JVM heap profiling
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
@@ -81,6 +81,26 @@ tenured generation:
    15.831777295566681% used
 ```  
 
+이외에 통계도 볼 수 있다.  
+```shell
+$ jmap -histo:live {pid}
+
+ num     #instances         #bytes  class name (module)
+-------------------------------------------------------
+   1:        109104        7053472  [B (java.base@17.0.7)
+   2:          9595        2988968  [I (java.base@17.0.7)
+   3:         73803        2361696  java.util.concurrent.ConcurrentHashMap$Node (java.base@17.0.7)
+   4:         98147        2355528  java.lang.String (java.base@17.0.7)
+   5:         15770        1864480  java.lang.Class (java.base@17.0.7)
+   6:         18148        1597024  java.lang.reflect.Method (java.base@17.0.7)
+   7:         29712        1188480  java.util.LinkedHashMap$Entry (java.base@17.0.7)
+   8:         16675         931768  [Ljava.lang.Object; (java.base@17.0.7)
+   9:          8708         745200  [Ljava.util.HashMap$Node; (java.base@17.0.7)
+  10:           888         658048  [Ljava.util.concurrent.ConcurrentHashMap$Node; (java.base@17.0.7)
+  ..
+
+```  
+
 이런 에러가 나올 수 있다.  
 ```shell
 
@@ -96,10 +116,18 @@ $ jhsdb jmap --heap --pid 5678
 
 * heap dump file 생성  
 ```shell
+$ jmap -dump:format=b,file=heapdump.hprof {pid}
+
+$ jcmd {pid} GC.heap_dump ./heapdump.hprof
+
+# jhsdb의 경우 jvm이 정지되니 주의하자.
+# 서버 에러가 나거나 운영중이 아닌 곳에서만 사용
 $ jhsdb jmap --binaryheap --dumpfile heapdump.hprof --pid {pid}
 
-$ jmap -dump:format=b,file=heapdump.hprof {pid}
-```
+혹은 실행 시 
+$ ‐XX:+HeapDumpOnOutOfMemoryError 추가
+
+```  
 
 * 각 지표는 뭘까  
 
@@ -138,9 +166,13 @@ Retained Size (보유 크기): 보유 크기는 지배자 객체와 해당 하�
 Reference Chains (참조 체인): 특정 객체가 다른 객체에 어떻게 참조되고 있는지를 보여주는 참조 체인 정보를 분석하여 메모리 누수 및 순환 참조를 식별하는 데 도움이 됩니다.
 ```
 
+* 메모리 leak 상황 참고. 
+
+[java memoru leak-baeldung](https://www.baeldung.com/java-memory-leaks)
+
 
 ### FINALLY  
-수정중!
+이같이 heap을 보고 코드를 수정하거나, 혹은 GC 튜닝을 통해서 해결할 수 있을 것 같다.  
 
 끝
 
