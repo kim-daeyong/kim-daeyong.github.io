@@ -17,7 +17,7 @@ toc: true
 
 ### CATCH  
 
-먼저 처음 flash 하던 방법은 다음과 같다.  
+먼저 처음 flash 하던 방법과 문제 발생 상황은 다음과 같다.  
 
 * 설치 
     1. [Etcher](https://etcher.balena.io/)와 [Jetson Nano Developer Kit SD Card Image-4.6.1](https://developer.nvidia.com/embedded/downloads#?search=jetson%20nano)을 다운받는다.
