@@ -53,6 +53,10 @@ toc: true
     다만 Virtual box를 사용하면 flash가 98~99%에서 멈춰버린다.  
     포럼에도 이같은 문제가 제기되어 있다, vmware를 사용하자.  
 
+이 black screen은 Nvidia forum을 보면 신형 Nano orin에도 발생하는 것 같다.  
+
+아무튼   
+
 이제 bootFromUSB를 이용해 SSD를 root으로 사용하려고 했다.  
 
 * bootFromUSB  
