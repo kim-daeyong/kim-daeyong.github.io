@@ -143,7 +143,7 @@ Code Deploy를 통해 배포해보자.
     ![image](https://github.com/kim-daeyong/kim-daeyong.github.io/assets/45562285/98b3ca12-44cd-4eab-913f-faeac8208dad)
     1. 파이프라인 이름
     2. Role name : 생성해주거나 생성해준 Role 설정
-    3. adcanced setting > Custom location ( S3 버켓 선택 )
+    3. advanced setting > Custom location ( S3 버켓 선택 )
     4. Encryption key는 뭐 그냥 디폴트로 해줌
     ![image](https://github.com/kim-daeyong/kim-daeyong.github.io/assets/45562285/d6541d69-4598-49d4-85eb-579fa157f771)  
     5. S3 버켓 설정
