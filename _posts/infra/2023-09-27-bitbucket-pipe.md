@@ -163,7 +163,7 @@ Code Deploy를 통해 배포해보자.
             2. deployment lifecycle events 에서 View events 확인.
             3. event에서 이전(처음 실패한)의 잘못된 스크립트 파일을 계속 읽는 것을 확인. 
         
-        * 해결
+        * 해결  
             인스턴스 내부의 `/opt/codedeploy-agent/deployment-root/` 에 code deploy에 관련된 파일들이 저장되고 있었음.  
             UUID 같은 이름의 디렉토리(code deploy의 id아닐까) 밑에 d-xxxxxxx라는 디렉토리들이 있었음  
             이는 실패한 `code deploy task id`와 같았다.  
