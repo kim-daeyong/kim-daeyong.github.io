@@ -127,7 +127,7 @@ Code Deploy를 통해 배포해보자.
     3. 이후 Deployment Group 생성  
         ![image](https://github.com/kim-daeyong/kim-daeyong.github.io/assets/45562285/b89ea154-4fe4-4eaa-b82d-bd45cbbe83c9)
         ![image](https://github.com/kim-daeyong/kim-daeyong.github.io/assets/45562285/ab653935-6fca-4173-b134-49c418a3274b)
-        1. 배포 그룹 이름 : 배포 그룹 이름 ( 규칙 : [서비스명]-[env]-codedeploy-group )
+        1. 배포 그룹 이름 : 배포 그룹 이름
         2. 서비스 역할 : 위에서 만들어둔 IAM role 사용
         3. 배포 유형 :  
                 In-Place : EC2를 더 생성 하지 않고 배포  
