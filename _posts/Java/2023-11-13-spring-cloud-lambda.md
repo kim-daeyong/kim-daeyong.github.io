@@ -27,8 +27,37 @@ toc: true
     나는 `2022.0.4` 버전을 사용하였다.
 
 * Lambda Function  
+    Lambda Funtion은 `Function`, `Consumer`, `Suppiler`로 구현될 수 있으며  
+    properties에 `spring.cloud.function.definition`을 명시하지않으면 Funtion, Consumer, Supplier 순으로 구현된 Lambda Function을 찾는다고 한다.  
 
-    자바 Function을 사용하였다.  
+    예)
+
+    ```java 
+
+    @Configuration
+    public class MyFunctionConfig {
+
+        @Bean
+        public Function<String, String> myFunction() {
+            return s -> "Hello, " + s;
+        }
+
+        @Bean
+        public Consumer<String> myConsumer() {
+            return s -> System.out.println("Consumed: " + s);
+        }
+
+        @Bean
+        public Supplier<String> mySupplier() {
+            return () -> "Supplier Output";
+        }
+    }
+
+    //application.properties
+    spring.cloud.function.definition=myFunction
+    ```
+
+    나는 자바 Function을 사용하였다.  
     테스트 코드는 다음과 같다.  
     
     * 먼저 Gradle
