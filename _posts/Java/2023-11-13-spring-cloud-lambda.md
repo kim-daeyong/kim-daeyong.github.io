@@ -28,12 +28,7 @@ toc: true
 
 * Lambda Function  
 
-    Aws Lambda function을 자바에서 구현해주려면 세가지 방법이 있다.  
-    1. Function
-    2. Consumer
-    3. Supplier  
-
-    이중에 Function을 사용하였다.  
+    자바 Function을 사용하였다.  
     테스트 코드는 다음과 같다.  
     
     * 먼저 Gradle
