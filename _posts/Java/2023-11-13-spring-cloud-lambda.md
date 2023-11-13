@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: Aws Lambda 배포 및 direct(code) trigger(spring boot3) 
+title: Aws Lambda 배포 및 direct(sdk) trigger(spring boot3) 
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
