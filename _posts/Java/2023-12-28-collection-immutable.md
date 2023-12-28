@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: Java의 of() static method (create Immutable Collections)
+title: Java의 List, Set, Map의 of() static method (create Immutable Collections)
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
@@ -22,7 +22,7 @@ toc: true
     Jdk 9 부터 추가 된 Factory method 입니다.  
     Immutable 한 collection을 생성합니다.  
     그래서 add, put이나 set등 변경할 수 없게 됩니다.  
-    
+
     사용할때 다음과 같은 특징을 갖습니다.  
     * null 요소로 만드려고 하면 NullPointerException 이 발생
         <img width="1024" alt="image" src="https://github.com/kim-daeyong/kim-daeyong.github.io/assets/45562285/42776349-f6cc-483d-a550-d816b5a173ab">
