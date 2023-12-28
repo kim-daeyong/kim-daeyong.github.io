@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: Java의 List, Set, Map의 of() static method (create Immutable Collections)
+title: Java의 List, Set, Map의 of() static method (Immutable Collections)
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
@@ -11,8 +11,8 @@ toc: true
 
 
 ## TRY  
-지금까지 `List.of`, `Set.of`, `Map.of`를 그냥 사용했습니다.  
-그냥 Collection을 만들기위해 사용했었는데 오늘 처음으로 Immutable이란걸 알게 되었습니다.  
+지금까지 `List.of`, `Set.of`, `Map.of`를 그냥 Collection을 간단하게 생성할때 사용했었습니다.  
+하지만 그동안 생성된 List등을 변경하지않았기에 오늘 처음으로 Of() 메서드를 통해 생성된 Collection 들이 Immutable이란걸 알게 되었습니다.  
 
 충격  
 
@@ -26,8 +26,8 @@ toc: true
     사용할때 다음과 같은 특징을 갖습니다.  
     * null 요소로 만드려고 하면 NullPointerException 이 발생
         <img width="1024" alt="image" src="https://github.com/kim-daeyong/kim-daeyong.github.io/assets/45562285/42776349-f6cc-483d-a550-d816b5a173ab">
-    * of()로 생성된 Collection은 불변이므로 요소를 추가하려고 하면 UnsupportedOperationException 이 발생
-        <img width="871" alt="Screenshot 2023-12-28 at 5 36 36 PM" src="https://github.com/kim-daeyong/kim-daeyong.github.io/assets/45562285/6c3a08f3-c22f-4de2-8c7b-fa33822d0959">
+    * of()로 생성된 Collection은 불변이므로 요소를 추가 및 변경등을 하면 UnsupportedOperationException 이 발생
+        <img width="875" alt="image" src="https://github.com/kim-daeyong/kim-daeyong.github.io/assets/45562285/83120911-02f8-417e-b5e0-b19f2e737f3b">
 
     docs에는 다음과 같이 써있습니다.(Docs 가서 보자)  
     > Immutable List Static Factory Methods
