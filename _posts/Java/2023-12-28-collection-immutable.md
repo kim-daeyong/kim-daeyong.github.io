@@ -4,7 +4,7 @@ title: Java의 List, Set, Map의 of() static method (Immutable Collections)
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
-tags: [Java, Spring, JPA, QueryDsl]
+tags: [Java]
 categories : [Java]
 toc: true
 ---
