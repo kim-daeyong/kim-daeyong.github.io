@@ -12,7 +12,7 @@ toc: true
 
 ## TRY  
 지금까지 `List.of`, `Set.of`, `Map.of`를 그냥 Collection을 간단하게 생성할때 사용했었습니다.  
-하지만 그동안 생성된 List등을 변경하지않았기에 오늘 처음으로 Of() 메서드를 통해 생성된 Collection 들이 Immutable이란걸 알게 되었습니다.  
+그동안 List등 Of()로 생성한 Object의 요소를 변경하지않았기에 몰랐는데 오늘 메서드를 통해 생성된 Collection 들이 Immutable이란걸 알게 되었습니다.  
 
 충격  
 
