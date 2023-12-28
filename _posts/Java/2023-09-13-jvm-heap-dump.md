@@ -5,7 +5,7 @@ subtitle:
 gh-repo: 
 gh-badge: [star, fork, follow]
 tags: [Java, JVM, Heap]
-categories : [Java]
+categories : [Programming]
 toc: true
 ---
 

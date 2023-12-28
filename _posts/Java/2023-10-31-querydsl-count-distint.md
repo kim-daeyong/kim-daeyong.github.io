@@ -5,7 +5,7 @@ subtitle:
 gh-repo: 
 gh-badge: [star, fork, follow]
 tags: [Java, Querydsl]
-categories : [Java]
+categories : [Programming]
 toc: true
 ---
 
