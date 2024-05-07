@@ -1,10 +1,10 @@
 ---
 layout: post 
-title: Windows 윈도우에서 docker-credential-desktop: executable file not found in %PATH%
+title: Windows 윈도우에서 docker-credential-desktop: executable file not found in PATH
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
-tags: [Windows,docker]
+tags: [Windows, docker]
 categories : [Other]
 toc: true
 ---
