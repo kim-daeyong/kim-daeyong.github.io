@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: Windows 윈도우에서 docker-credential-desktop: executable file not found in PATH
+title: "Windows 윈도우에서 docker-credential-desktop: executable file not found in PATH"S
 subtitle: 
 gh-repo: 
 gh-badge: [star, fork, follow]
@@ -26,6 +26,7 @@ aws에 로그인하려 했으나 로그인이 안되는 문제가 발생했습�
 * 에러 해결 방법
 
 ~~~
+
 C:\Users\[YOUR.USER]\.docker\config.json
 
 ~~~
@@ -37,7 +38,9 @@ C:\Users\[YOUR.USER]\.docker\config.json
 혹시 리눅스라면
 
 ~~~
+
 $HOME/.docker/config.json
+
 ~~~
 
 해당 경론에 있습니다.  
