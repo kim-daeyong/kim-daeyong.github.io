@@ -11,7 +11,8 @@ subtitle: 개발자
     * GoLang
     * JavaScript & TypeScript / NodeJs
     ---
-    * AWS
+    * On-premise
+    * Cloud
     * GitOps
     * Jenkins
     * ArgoCD
