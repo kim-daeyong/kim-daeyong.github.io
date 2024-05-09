@@ -5,22 +5,7 @@ subtitle: 개발자
 ---
 
 김대용 / Kim Daeyong  
-* Backend Developer / Mlops, DevOps
-    * Java
-    * Python
-    * GoLang
-    * JavaScript & TypeScript / NodeJs
-    ---
-    * On-premise
-    * Cloud
-    * GitOps
-    * Jenkins
-    * ArgoCD
-    * Airflow
-    * Mlflow
-    * KubeFlow
-    * KubernetesS
-    * ELK
+
 
 E-Mail : <kdy2353@gmail.com>  
 Github : [kim-daeyong](https://github.com/kim-daeyong)
