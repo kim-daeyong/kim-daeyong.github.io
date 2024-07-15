@@ -64,7 +64,7 @@ toc: true
     2. ssd 포맷 (ext4, partitioning은 GUID Partition Table) 
     3. $ cd bootFromUSB
     4. $ ./copyRootToUSB.sh 
-    5. $ sudo gedit extlinux.conf
+    5. $ sudo gedit /etc/extlinux/extlinux.conf
     6. 다음 LABEL primary를 복사해 밑에 붙여넣고 sdcard로 수정했다.  
         ```shell
             TIMEOUT 30
